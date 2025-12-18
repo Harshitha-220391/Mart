@@ -1,0 +1,97 @@
+.{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+
+
+.top-bar {
+   /* back-ground:linear-gradient(to right, #ff4e50, #f9d423); */
+    text-align:center;
+    padding: 8px;
+    color:black;
+    font-weight:bold;
+}
+
+
+.header{
+    color:white;
+    background:#111;
+    padding:20 px 50 px;
+    align-items: center;
+
+    display:flex;
+    Justify-content:space-between;
+    
+}
+.header h1{
+    text-align:center;
+}
+
+
+.navbar{
+    background:black;
+    text-align:center;
+    padding:15 px;
+}
+
+.navbar a{
+    color:white;
+    font-size:18 px;
+    margin:0 15 px;
+}
+
+
+.banner{
+    text-align:center;
+    color:black;
+    background-size:cover;
+    padding:80 px;
+
+
+}
+
+.products{
+    display:flex;
+    grid-template-columns: repeat(auto-fit,minmax(230 px,1fr));
+    gap:20 px;
+}
+
+.card{
+    background:white;
+    border-radius:10 px;
+    box-shadow:0.3s;
+    padding:15 px;
+    text-align:center;
+    transition:transform 0.3s;
+}
+
+
+.card img{
+    width:60%;
+    height:120 px;
+    object-fit:contain;
+     display:inline-block;
+}
+
+.cards{
+    background:white;
+    border-radius:10 px;
+    box-shadow:0.3s;
+    padding:15 px;
+    text-align:center;
+    transition:transform 0.3s;
+}
+
+.cards img{
+    width:60%;
+    height:120 px;
+    object-fit:contain;
+     display:inline-block;
+}
+.footer{
+    text-align:center;
+    color:white;
+    background:#111;
+}
