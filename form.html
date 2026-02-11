@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            forms
+            </title>
+    </head>
+    <style>
+        .form-box {
+    width: 420px;
+    background: white;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Form heading */
+.form-box h2 {
+    margin-bottom: 25px;
+    color: #111;
+}
+
+/* Labels */
+.app-form label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: 500;
+}
+
+/* Inputs, select, textarea */
+.app-form input,
+.app-form select,
+.app-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Focus effect */
+.app-form input:focus,
+.app-form select:focus,
+.app-form textarea:focus {
+    border-color: #f9d423;
+    outline: none;
+}
+
+/* Textarea resize off */
+.app-form textarea {
+    resize: none;
+    height: 80px;
+}
+
+/* Button */
+.app-form button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: #111;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Button hover */
+.app-form button:hover {
+    background: #f9d423;
+    color: black;
+}
+
+
+        </style>
+        </head>
+
+        <body>
+            <section class="form-box" style="display:inline-block; vertical-align:top; width:30%;">
+    <h2>Contact Support</h2>
+
+    <form class="app-form">
+        <label>Name</label>
+        <input type="text" placeholder="Your name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Your email">
+
+        <label>Issue Type</label>
+        <select>
+            <option>Order Issue</option>
+            <option>Payment Issue</option>
+            <option>Product Query</option>
+            <option>Other</option>
+        </select>
+
+        <label>Message</label>
+        <textarea placeholder="Type your message"></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+
+
+<section  class="form-box" id="order" style="display:inline-block; vertical-align:top; width:30%;">
+    <h2>Order Details</h2>
+    <form class="app-form">
+        <label>Customer-name</label>
+        <input type="text" placeholder="Enter your name">
+        <label>Product</label>
+        <select>
+            <option>Select Product</option>
+            <option>Laptop</option>
+            <option>Mobile</option>
+            <option>Tablet</option>
+            <option>Smartwatch</option>
+        </select>
+        <label>Quantity</label>
+        <input type="number" min="1">
+        <label>Address</label>
+        <textarea placeholder="Enter your address"></textarea>
+        <label>Payment Mode</label>
+        <select>
+            <option>Credit Card</option>
+            <option>Debit Card</option>
+            <option>Net Banking</option>
+            <option>Cash on Delivery</option>
+        </select>
+        <button type="submit">Place Order</button>
+    </form>
+</section>
+
+            </body>
+        </html>
