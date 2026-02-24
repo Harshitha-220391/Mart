@@ -56,7 +56,7 @@ foreach($files as $f)
     echo $f . "<br>";
 }
     
-
+ 
 /* file modes */
 
 echo "<h2>file modes demonstration</h2>";
