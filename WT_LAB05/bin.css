@@ -1,0 +1,295 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Top sale bar */
+.one{
+    color:black;
+    text-align: center;
+    font-size:24px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    background:linear-gradient(to right,red,yellow);
+    padding:10px;
+}
+
+/* Header */
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:#111;
+    color:white;
+}
+
+.header input{
+    padding:10px;
+    width:300px;
+    border-radius:20px;
+    border:none;
+}
+
+/* Navbar */
+.navbar{
+    background:#1f1f1f;
+    padding:12px;
+    text-align:center;
+}
+
+.navbar a{
+    color:white;
+    margin:30px;
+    font-weight:500;
+    text-decoration:none;
+}
+
+.navbar a:hover{
+    color:#f9d423;
+}
+
+/* Banner */
+.two{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    color:white;
+    padding:80px;
+    text-align:center;
+}
+
+.two button{
+    margin-top:20px;
+    padding:12px 30px;
+    border:none;
+    background:#f9d423;
+    font-size:16px;
+    cursor:pointer;
+    border-radius:25px;
+}
+
+/* Container */
+.container {
+    padding: 40px;
+    background: #f5f5f5;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+/* Products grid – FIXED to 2 per row */
+.products {
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+
+    gap: 100px;
+    justify-content: center;
+}
+
+/* Card */
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+     transform:translateY(-8px);  
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Image CENTERED */
+.card img 
+{
+    width: 200px;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Price */
+.card span
+ {
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Button */
+.card button 
+{
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background: #111;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover 
+{
+    background: #f9d423;
+    color: black;
+}
+
+
+/* layout */
+.three,
+div:has(> table),
+.four 
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+}
+
+/* Parent alignment */
+body {
+    text-align: center;
+}
+
+/* design table */
+table {
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+table th {
+    padding: 6px 9px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+
+table td {
+    padding: 6px 9px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+table tr:hover {
+    background-color: #f5f5f5;
+    transition: 0.3s;
+}
+
+
+
+/* Kids toys table */
+.three th {
+    background: linear-gradient(to right,#2196F3,#64B5F6);
+}
+
+/* Product table */
+.four th {
+    background: linear-gradient(to right,#4CAF50,#81C784);
+}
+
+
+table td, table th {
+    text-align: center;
+}
+
+
+body {
+    background: #f2f2f2;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* Form container */
+.form-box {
+    width: 420px;
+    background: white;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Form heading */
+.form-box h2 {
+    margin-bottom: 25px;
+    color: #111;
+}
+
+/* Labels */
+.app-form label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: 500;
+}
+
+/* Inputs, select, textarea */
+.app-form input,
+.app-form select,
+.app-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Focus effect */
+.app-form input:focus,
+.app-form select:focus,
+.app-form textarea:focus {
+    border-color: #f9d423;
+    outline: none;
+}
+
+/* Textarea resize off */
+.app-form textarea {
+    resize: none;
+    height: 80px;
+}
+
+/* Button */
+.app-form button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: #111;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Button hover */
+.app-form button:hover {
+    background: #f9d423;
+    color: black;
+}
+
+
+
+/* Footer */
+.footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+
+
