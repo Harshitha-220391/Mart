@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <script src="jquery-4.0.0.min.js"></script>
+    </head>
+    <body>
+        <h2>Basic Selectors</h2>
+        <p id="para1" class="text">web technologies</p>
+        <p class="text"> computer science</p>
+        <div class="box">Bunty</div>
+        <div class="box">shanmukh</div>
+        <h2>Hierarchy Selector</h2>
+        <div id="parent">
+            <p>john</p>
+            <p>joe</p>
+            <span>grammy</span>
+        </div>
+        <p class="sibling1">usa</p>
+        <p class="sibling2">uk</p>
+        <p class="sibling3">uae</p>
+        <h2>filter selectors</h2>
+        <p id="p1">alpha</p>
+        <p id="p2">beta</p>
+        <p id="p3">gamma</p>
+        <p id="p4">delta</p>
+        <p id="p5">epsilon</p>
+       <h2>attribute selectors</h2>
+       <input type="text" placeholder="Name" name="username">
+       <input type="password"value="password"name="password">
+       <input type="email"value="email" name="useremail">
+       <input type="text"  value="hello">
+       <br><br>
+       <button id="run">Run Selectors</button>
+
+
+    </body>
+     <script>
+        // basic selectors
+        $("p").addClass("highlight");
+        $("#para1").css("color","red");
+        $(".text").css("font-weight","bold");
+        $("p,div").css("font-size","18px");
+        //hierarchy selectors
+        $("#parent p").css("background","lightgreen");
+        $("#parent>span").css("color","blue");
+        $(".sibling1 + .sibling2").css("color","pink");
+        $(".sibling1 ~ p").css("font-style","italic");
+        //filter selectors
+        $("p:first").css("background","purple");
+        $("p:last").css("font-size","30px");
+        $("p:eq(2)").css("color","brown");
+        $("p:even").css("font-size","10px");
+        $("p:odd").css("background","violet");
+         $("p:not(#p1)").css("font-style","bold");
+        //attribute selector
+        $("[name]").css("border","2px solid green");
+        $("[type=text]").css("background","lightblue");
+        $("[name^=user]").css("color","red");
+         $("[name$=name]").css("font-weight","bold");  
+          $("[name*=email]").css("background","yellow");
+
+        
+
+   </script>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Traversing</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        .box {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>DOM Traversing</h2>
+
+    <div class="box" id="grandparent">
+        Grandparent
+        <div class="box" id="parent">
+            Parent
+            <div class="box" id="child1">Child 1</div>
+            <div class="box" id="child2">Child 2</div>
+        </div>
+    </div>
+
+    <ul id="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <br>
+
+    <button id="parentBtn">Parent</button>
+    <button id="parentsBtn">Parents</button>
+    <button id="childrenBtn">Children</button>
+    <button id="findBtn">Find</button>
+
+    <button id="siblingsBtn">Siblings</button>
+    <button id="nextBtn">Next</button>
+    <button id="prevBtn">Prev</button>
+
+    <button id="firstBtn">First</button>
+    <button id="lastBtn">Last</button>
+    <button id="eqBtn">Eq(2)</button>
+    <button id="notBtn">Not(2)</button>
+
+    <script>
+        $(document).ready(function(){
+
+            $("#parentBtn").click(function(){
+                $("#child1").parent().css("background","lightblue");
+            });
+
+            $("#parentsBtn").click(function(){
+                $("#child1").parents().css("background","lightgreen");
+            });
+
+            $("#childrenBtn").click(function(){
+                $("#parent").children().css("background","lightyellow");
+            });
+
+            $("#findBtn").click(function(){
+                $("#grandparent").find("#child2").css("background","pink");
+            });
+
+            $("#siblingsBtn").click(function(){
+                $("#child1").siblings().css("background","orange");
+            });
+
+            $("#nextBtn").click(function(){
+                $("#child1").next().css("background","red");
+            });
+
+            $("#prevBtn").click(function(){
+                $("#child2").prev().css("background","purple");
+            });
+
+            $("#firstBtn").click(function(){
+                $("#list li").first().css("color","blue");
+            });
+
+            $("#lastBtn").click(function(){
+                $("#list li").last().css("color","green");
+            });
+
+            $("#eqBtn").click(function(){
+                $("#list li").eq(2).css("color","red");
+            });
+
+            $("#notBtn").click(function(){
+                $("#list li").not(":eq(2)").css("color","brown");
+            });
+
+        });
+    </script>
+
+</body>
+</html>

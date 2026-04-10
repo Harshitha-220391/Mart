@@ -1,0 +1,53 @@
+<html >
+<head>
+    <script src="jquery-4.0.0.min.js"></script>
+</head>
+
+<body>
+
+    <h2>jQuery Attribute Methods</h2>
+
+    <img id="myImg" src="Screenshot (41).png" width="150">
+
+    <br><br>
+
+    <input type="text" id="name" value="Harika">
+
+    <br><br>
+
+    <input type="checkbox" id="checkBox"> Accept
+
+    <br><br>
+
+    <button id="btn1">Change Image</button>
+    <button id="btn2">Get Value</button>
+    <button id="btn3">Disable Checkbox</button>
+    <button id="btn4">Remove Attribute</button>
+
+    <p id="output"></p>
+
+    <script>
+        
+
+            $("#btn1").click(function(){
+                $("#myImg").attr("src","Screenshot (26).png");
+            });
+
+            $("#btn2").click(function(){
+                var val = $("#name").val();
+                $("#output").text(val);
+            });
+
+            $("#btn3").click(function(){
+                $("#checkBox").prop("disabled", true);
+            });
+
+            $("#btn4").click(function(){
+                $("#myImg").removeAttr("width");
+            });
+
+        
+    </script>
+
+</body>
+</html>

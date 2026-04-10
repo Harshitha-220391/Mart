@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Manipulation</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        .highlight {
+            background-color: yellow;
+            color: black;
+        }
+
+        .big {
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Style Manipulation</h2>
+
+    <p id="text">Sample Text for Styling</p>
+
+    <br>
+
+    <button id="cssBtn">CSS</button>
+    <button id="addBtn">Add Class</button>
+    <button id="removeBtn">Remove Class</button>
+    <button id="toggleBtn">Toggle Class</button>
+    <button id="checkBtn">Check Class</button>
+
+    <p id="output"></p>
+
+    <script>
+        $(document).ready(function(){
+
+            $("#cssBtn").click(function(){
+                $("#text").css({
+                    "color": "blue",
+                    "background-color": "lightgray",
+                    "font-size": "20px"
+                });
+            });
+
+            $("#addBtn").click(function(){
+                $("#text").addClass("highlight big");
+            });
+
+            $("#removeBtn").click(function(){
+                $("#text").removeClass("highlight big");
+            });
+
+            $("#toggleBtn").click(function(){
+                $("#text").toggleClass("highlight");
+            });
+
+            $("#checkBtn").click(function(){
+                var result = $("#text").hasClass("highlight");
+                $("#output").text(result);
+            });
+
+        });
+    </script>
+
+</body>
+</html>
